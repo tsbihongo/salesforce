@@ -4,7 +4,7 @@ from twilio.rest import Client
 import json
 import sys
 
-message_body = sys.argv[1] if len(sys.argv) > 1 else ""
+message_body = sys.argv[1]
 
 account_sid = 'AC2802e17c9821414649ae4f0500824697'
 auth_token = 'b4c696463193bb5f9b355915f1baf1b8'
