@@ -6,6 +6,15 @@ import sys
 account_sid = 'AC2802e17c9821414649ae4f0500824697'
 auth_token = 'b4c696463193bb5f9b355915f1baf1b8'
 client = Client(account_sid, auth_token)
+
+message = client.messages.create(
+  from_='whatsapp:+14155238886',
+  body="message received", 
+  to='whatsapp:+85292097959'
+)
+
+
+
 #process using API
 endpoint = 'https://pwcai.openai.azure.com/openai/deployments/GPT35/chat/completions?api-version=2023-03-15-preview'
 api_key = 'f379af432a914d87a79c86c41ce3b765'
