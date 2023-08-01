@@ -8,6 +8,11 @@ import requests
 from twilio.rest import Client
 import json
 
+message = client.messages.create(
+      from_='whatsapp:+14155238886',
+      body="asking for question", 
+      to='whatsapp:+85292097959'
+    )
 app = Flask(__name__)
 
 def handle_incoming_message():
