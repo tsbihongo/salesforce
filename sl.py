@@ -2,13 +2,13 @@ pip install twilio
 import requests 
 from twilio.rest import Client
 import json
- 
+import sys
+
+message_body = sys.argv[1] if len(sys.argv) > 1 else ""
 
 account_sid = 'AC2802e17c9821414649ae4f0500824697'
 auth_token = 'ba83139014f5f22d83ed99123e35b06f'
 client = Client(account_sid, auth_token)
-
-message_body=text
 #process using API
 endpoint = 'https://pwcai.openai.azure.com/openai/deployments/GPT35/chat/completions?api-version=2023-03-15-preview'
 api_key = 'f379af432a914d87a79c86c41ce3b765'
