@@ -10,7 +10,6 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/', methods=['POST'])
 def handle_incoming_message():
     data = request.json
     message_body = data['message_body']
