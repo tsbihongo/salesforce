@@ -7,7 +7,7 @@ import sys
 message_body = sys.argv[1] if len(sys.argv) > 1 else ""
 
 account_sid = 'AC2802e17c9821414649ae4f0500824697'
-auth_token = 'ba83139014f5f22d83ed99123e35b06f'
+auth_token = 'b4c696463193bb5f9b355915f1baf1b8'
 client = Client(account_sid, auth_token)
 #process using API
 endpoint = 'https://pwcai.openai.azure.com/openai/deployments/GPT35/chat/completions?api-version=2023-03-15-preview'
